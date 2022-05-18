@@ -2,19 +2,19 @@
 Code samples to go along with the blog post on how to run code at load/unload time when using LD_PRELOAD to inject libraries.
 
 ## Links to Tutorials
-Blog: TODO - FILL IN WHEN READY
+Blog: [LD_PRELOAD: How to Run Code at Load Time](https://www.secureideas.com/blog/2021/02/ld_preload-how-to-run-code-at-load-time.html)
 
 ## Overview
-This repo is used to provide some code samples to go along side a tutorial in Secure Ideas blogs. This code repo will provide you with the code for:
+This repo is used to provide some code samples to go along side a tutorial in the Secure Ideas blog. This code repo will provide you with the code for:
 
  * A simple hello world binary target
  * The LD_PRELOAD injection code
  * A make file to build it easily in a Kali VM.
  
-The goal of this tutorial is to show how to use constructor and destructor attributes for running code at load/unload time with an LD_PRELOAD shared object to run code without hijacking a function call. In this case, It will demo this on a simple hello world binary but
+The goal of this tutorial is to show how to use constructor and destructor attributes for running code at load/unload time with an LD_PRELOAD shared object to run code without hijacking a function call. In this case, It will demo this on a simple hello world binary
 
 ## Building The Code Using Make.
-Once you clone the repo, simply change into the directory and run ```make``` or ```make all``` to build both the game and the LD_PRELOAD hijack shared object. The make file also includes a help option to show all of the build targets:
+Once you clone the repo, simply change into the directory and run ```make``` or ```make all``` to build both the target and the LD_PRELOAD hijack shared object. The make file also includes a help option to show all of the build targets:
 
 ```
 kali@kali:~$ make help
